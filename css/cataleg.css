@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 18px; }
+
+body {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column; }
+  body .header {
+    height: 200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    body .header .headerTitle {
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 20px; }
+      body .header .headerTitle h1 {
+        font-size: 3em;
+        letter-spacing: 32px;
+        text-transform: uppercase; }
+    body .header .headerDescription {
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      cursor: pointer; }
+      body .header .headerDescription h3 {
+        font-size: 1.3em; }
+  body .mainDiv {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body .mainDiv .productsDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto; }
+      body .mainDiv .productsDiv .productsGeneralDiv {
+        width: 23%;
+        height: 600px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        flex-direction: column; }
+        body .mainDiv .productsDiv .productsGeneralDiv .productsImageDiv {
+          height: 85%;
+          width: 100%;
+          background: black;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-direction: column;
+          background-image: url(../img/product.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+          position: relative; }
+          body .mainDiv .productsDiv .productsGeneralDiv .productsImageDiv .productsImageInfoDiv {
+            height: 50px;
+            width: 100px;
+            background: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px 0px 5px 5px; }
+            body .mainDiv .productsDiv .productsGeneralDiv .productsImageDiv .productsImageInfoDiv p {
+              color: white;
+              text-transform: uppercase; }
+          body .mainDiv .productsDiv .productsGeneralDiv .productsImageDiv .productsImageAddDiv {
+            width: 100%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            transition: 0.5s all; }
+        body .mainDiv .productsDiv .productsGeneralDiv .productsImageDiv:hover .productsImageAddDiv {
+          opacity: 1;
+          transition: 0.5s all; }
+        body .mainDiv .productsDiv .productsGeneralDiv .productsbannerDiv {
+          height: 15%;
+          width: 100%;
+          display: flex;
+          background: whitesmoke;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; }
+
+/*# sourceMappingURL=cataleg.css.map */
